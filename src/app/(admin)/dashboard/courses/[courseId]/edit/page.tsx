@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client"
 
 import type React from "react"
@@ -33,7 +33,7 @@ const mockCourse = {
   status: "Published" as const,
 }
 
-export default function EditCoursePage({ params }: { params: { courseId: string } }) {
+export default function EditCoursePage() {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
   const [thumbnailPreview, setThumbnailPreview] = useState<string>(mockCourse.thumbnail)

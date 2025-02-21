@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client"
 import { useRouter } from "next/navigation"
 import { FaArrowLeft, FaEdit, FaGraduationCap, FaClock, FaChartLine } from "react-icons/fa"
@@ -35,7 +35,7 @@ const stats = [
     { icon: FaChartLine, label: "Completion Rate", value: `${mockCourse.progress}%` },
   ]
 
-export default function ViewCoursePage({ params }: { params: { courseId: string } }) {
+export default function ViewCoursePage() {
   const router = useRouter()
 
   return (
