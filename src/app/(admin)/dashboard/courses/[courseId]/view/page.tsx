@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 import { useRouter } from "next/navigation"
 import { FaArrowLeft, FaEdit, FaGraduationCap, FaClock, FaChartLine } from "react-icons/fa"
@@ -45,7 +46,7 @@ export default function ViewCoursePage({ params }: { params: { courseId: string 
           Back
         </Button>
         <h1 className="text-2xl font-bold flex-1 text-slate-800">Course Details</h1>
-        <Button onClick={() => router.push(`/dashboard/courses/${params.courseId}/edit`)}>
+        <Button onClick={() => router.push(`/dashboard/courses/${mockCourse.id}/edit`)}>
           <FaEdit className="mr-2" />
           Edit Course
         </Button>

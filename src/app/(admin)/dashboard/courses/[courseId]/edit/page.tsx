@@ -78,7 +78,7 @@ export default function EditCoursePage({ params }: { params: { courseId: string 
   }
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto py-6">
       <div className="flex items-center gap-4 mb-8">
         <Button variant="ghost" className="text-gray-600" onClick={() => router.back()}>
           <FaArrowLeft className="mr-2" />
@@ -87,7 +87,7 @@ export default function EditCoursePage({ params }: { params: { courseId: string 
         <h1 className="text-2xl font-bold text-slate-800">Edit Course</h1>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-8 text-gray-600 pb-6">
+      <form onSubmit={handleSubmit} className="space-y-8 text-gray-600">
         {/* Thumbnail Upload */}
         <div className="space-y-4">
           <label className="block text-sm font-medium text-gray-700">Course Thumbnail</label>
