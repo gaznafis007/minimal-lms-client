@@ -1,3 +1,4 @@
+import { footerLinks } from "@/constants/footerlinks";
 import Link from "next/link";
 import {
   FaFacebook,
@@ -8,35 +9,7 @@ import {
   FaGraduationCap,
 } from "react-icons/fa";
 
-const footerLinks = {
-  product: [
-    { label: "Features", href: "#" },
-    { label: "Pricing", href: "#" },
-    { label: "For Teams", href: "#" },
-    { label: "Enterprise", href: "#" },
-    { label: "Success Stories", href: "#" },
-  ],
-  resources: [
-    { label: "Documentation", href: "#" },
-    { label: "Tutorials", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Community", href: "#" },
-    { label: "Help Center", href: "#" },
-  ],
-  company: [
-    { label: "About Us", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" },
-    { label: "Partners", href: "#" },
-    { label: "Contact", href: "#" },
-  ],
-  legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "Security", href: "#" },
-  ],
-};
+
 
 const socialLinks = [
   { icon: FaFacebook, href: "#", label: "Facebook" },
@@ -55,8 +28,8 @@ export function Footer() {
           {/* Brand Section */}
           <div className="col-span-2 md:col-span-3">
             <div className="flex items-center gap-2">
-              <FaGraduationCap className="h-8 w-8 text-blue-600" />
-              <span className="text-xl font-bold">EduLearn</span>
+              <FaGraduationCap className="h-8 w-8 text-slate-800" />
+              <span className="text-xl font-bold text-slate-800">EduLearn</span>
             </div>
             <p className="mt-4 text-sm text-gray-600 leading-relaxed">
               Empowering learners worldwide with quality education and
@@ -71,7 +44,7 @@ export function Footer() {
                   className="text-gray-400 hover:text-gray-600 transition-colors"
                   aria-label={social.label}
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-5 w-5 text-slate-700 hover:text-slate-800" />
                 </Link>
               ))}
             </div>
