@@ -7,7 +7,7 @@ import { useForm, type SubmitHandler } from "react-hook-form"
 import { FaEnvelope, FaLock, FaUser, FaGoogle, FaGithub, FaEye, FaEyeSlash, FaCheck, FaTimes } from "react-icons/fa"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
-import { loginFeatures } from "@/constants/loginFeatures"
+import { registerFeatures } from "@/constants/loginFeatures"
 
 interface RegisterFormInputs {
   name: string
@@ -234,7 +234,7 @@ export default function RegisterPage() {
           <div className="max-w-md text-white">
             <h2 className="text-3xl font-bold mb-6">Start Your Learning Journey Today</h2>
             <ul className="space-y-4">
-              {loginFeatures.map((feature, index) => (
+              {registerFeatures.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
                     <FaCheck className="w-3 h-3" />

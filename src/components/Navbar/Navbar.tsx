@@ -12,6 +12,12 @@ const Navbar = () => {
               <span className="ml-2 text-xl text-slate-800 font-bold">EduLearn</span>
             </Link>
             <div className="flex items-center gap-4">
+              <Link href="/classes" className="text-gray-600 hover:text-primary">
+                My Classes
+              </Link>
+              <Link href="/dashboard/courses" className="text-gray-600 hover:text-primary">
+                Dashboard
+              </Link>
               <Link href="/login" className="text-gray-600 hover:text-primary">
                 Login
               </Link>
