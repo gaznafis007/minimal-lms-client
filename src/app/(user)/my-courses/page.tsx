@@ -38,7 +38,7 @@ export default function MyCoursesPage() {
 
   return (
     <div className="max-w-6xl mx-auto p-6 space-y-6">
-      <h1 className="text-2xl font-bold">My Courses</h1>
+      <h1 className="text-2xl font-bold text-slate-800">My Courses</h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {userCourses.map((course) => (
@@ -51,7 +51,7 @@ export default function MyCoursesPage() {
                 height={200}
                 className="w-full h-48 object-cover"
               />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center  opacity-100 transition-opacity">
                 <Button onClick={() => router.push(`/my-courses/${course.id}`)}>
                   <FaPlay className="mr-2" />
                   Continue Learning
@@ -60,7 +60,7 @@ export default function MyCoursesPage() {
             </div>
 
             <div className="p-4 space-y-4">
-              <h3 className="font-semibold">{course.title}</h3>
+              <h3 className="font-semibold text-slate-800">{course.title}</h3>
 
               <div className="space-y-2">
                 <div className="flex justify-between text-sm text-gray-600">
