@@ -72,7 +72,7 @@ const mockModules: Module[] = [
   },
 ]
 
-export default function ModulesPage({ params }: { params: { courseId: string } }) {
+export default function ModulesPage() {
   const router = useRouter()
   const [modules, setModules] = useState<Module[]>(mockModules)
   const [expandedModules, setExpandedModules] = useState<string[]>([])
