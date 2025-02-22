@@ -28,7 +28,7 @@ export function ModuleDialog({ module, onClose, onSave }: ModuleDialogProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
-        <h2 className="text-lg font-semibold mb-4">{module.id.startsWith("new-") ? "Add Module" : "Edit Module"}</h2>
+        <h2 className="text-lg text-slate-800 font-semibold mb-4">{module.id.startsWith("new-") ? "Add Module" : "Edit Module"}</h2>
         <form
           onSubmit={(e) => {
             e.preventDefault()
@@ -40,9 +40,9 @@ export function ModuleDialog({ module, onClose, onSave }: ModuleDialogProps) {
           }}
           className="space-y-4"
         >
-          <Input label="Module Title" name="title" defaultValue={module.title} required />
+          <Input label="Module Title" name="title" defaultValue={module.title} className="text-slate-800" required />
           <div className="flex justify-end gap-4">
-            <Button type="button" variant="outline" onClick={onClose}>
+            <Button type="button" variant="danger" onClick={onClose}>
               Cancel
             </Button>
             <Button type="submit">Save Module</Button>
